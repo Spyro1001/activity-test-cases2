@@ -1,16 +1,15 @@
 package com.csc205;
 
+
 import java.util.Arrays;
 
 public class Calculator {
 
     public int add(int a, int b) {
-        //System.out.println("*");
         return a + b;
     }
 
     public int add(int a, int... b) {
-        //System.out.println("**");
         return a + Arrays.stream(b).sum();
     }
 
